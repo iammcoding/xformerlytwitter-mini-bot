@@ -55,7 +55,6 @@ Watch the full tutorial on how to set up and run this bot on YouTube:
 
 [![Watch the tutorial](https://img.youtube.com/vi/C70jwFemBFs/maxresdefault.jpg)](https://www.youtube.com/watch?v=C70jwFemBFs)
 
-> **Note**: Replace `YOUR_VIDEO_ID` with the actual ID of your YouTube video.
 
 ### Example Code Snippet
 
