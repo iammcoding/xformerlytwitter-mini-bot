@@ -56,45 +56,6 @@ Watch the full tutorial on how to set up and run this bot on YouTube:
 [![Watch the tutorial](https://img.youtube.com/vi/C70jwFemBFs/maxresdefault.jpg)](https://www.youtube.com/watch?v=C70jwFemBFs)
 
 
-### Example Code Snippet
-
-```python
-from seleniumbase import SB
-
-username = "username"
-password = "password"
-
-with SB(uc=True) as sb:
-    sb.open("https://x.com/i/flow/login")
-
-    while True:
-        try:
-            username_input = sb.wait_for_element('input[autocomplete="username"]', timeout=10)
-            if username_input:
-                username_input.send_keys(username)
-
-            sb.sleep(2)
-
-            next_username_button = sb.wait_for_element('button:contains("Next")', timeout=10)
-            if next_username_button:
-                next_username_button.click()
-
-            sb.sleep(2)
-
-            password_input = sb.wait_for_element('input[name="password"]', timeout=10)
-            if password_input:
-                password_input.send_keys(password)
-
-            sb.sleep(2)
-
-            login_button = sb.wait_for_element('button:contains("Log in")', timeout=10)
-            if login_button:
-                login_button.click()
-
-            sb.sleep(2)
-            # Additional code here...
-```
-
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
